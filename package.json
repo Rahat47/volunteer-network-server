@@ -1,0 +1,24 @@
+{
+  "name": "volunteer-network",
+  "version": "1.0.0",
+  "description": "A Full stack MERN application for a non profit volunteer network, where people can volunteer for a good cause.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rahat47/volunteer-network-server.git"
+  },
+  "author": "Rahat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rahat47/volunteer-network-server/issues"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.2"
+  }
+}
