@@ -11,7 +11,8 @@ const eventSchema = mongoose.Schema({
     volunteers: {
         type: [String],
         default: []
-    }
+    },
+    imageURL: String
 })
 
 

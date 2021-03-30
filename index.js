@@ -1,6 +1,7 @@
 import express from 'express'
 import cors from 'cors'
 import eventRoutes from './routes/events.js'
+import userRoutes from './routes/users.js'
 import mongoose from 'mongoose'
 import { dbName, dbPass, dbUser, port } from './variables.js'
 const app = express()
@@ -10,7 +11,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
 app.use("/events", eventRoutes)
-
+app.use("/users", userRoutes)
 
 const uri = `mongodb+srv://${dbUser}:${dbPass}@cluster0.77zrg.mongodb.net/${dbName}?retryWrites=true&w=majority`
 
